@@ -1,0 +1,87 @@
+.slide{
+	width:615px;
+	position: relative;
+	float: left;
+	-webkit-text-size-adjust:none;
+} 
+div.slide div {
+	background: #222;
+	padding: 0 65px 4px 8px;
+	width:542px;
+	min-height:53px;
+	border-top:3px solid #fff;
+
+}
+.slide h2{
+	color:#fff;
+	font-size:15px;
+	margin:0;
+}
+.slide p{
+	color:#fff;
+	font-size:13px;
+	margin: 0
+}
+#slideshow div.slide img{
+	height:375px;
+	width:615px;
+}
+.position{
+	position:absolute;
+	right:16px;
+	top:417px;
+}
+#photo{
+	position:relative;
+}
+a.slidebutton {
+	display:block;
+	width:26px;
+	height:35px;
+	position:absolute;
+	right:38px;
+	top:385px;
+	background-color:#C60;
+	text-align:center;
+	line-height:30px;
+	font-size:26px;
+	color:#fff;
+	display:none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+}
+a#nextslide {
+	right:8px;
+}
+a.slidebutton:hover{
+	background-color:#6095C1;
+	text-decoration:none;
+}
+/*Let's make the navigation a little nicer on mobile*/
+@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+a.slidebutton {
+  background-color:rgba(0,0,0,.3);
+  top:5px;
+  left:5px;
+  height:210px;
+  width:40px;
+  padding-top:165px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; 
+}
+a#nextslide {
+  left:580px;
+}
+a.slidebutton:hover{
+	background-color:rgba(0,0,0,.3);
+}
+div.slide div {
+	padding: 0 35px 4px 8px;
+	width:572px;
+}
+.position{
+	right:6px;
+}
+} /*End Media Query*/
